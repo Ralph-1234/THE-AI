@@ -1,4 +1,4 @@
-THE SET UP (CREATE A FOLDER)
+THE SET UP
    >> THESE ARE SUBJECT TO CHANGE
 
 Step 1: download ollama
@@ -10,6 +10,7 @@ Library: llama3.2 > a small 1B and 3B model
 Step 3: Open Terminal >> ollama pull llama3.2
 
 Step 4: For the RAG >> ollama pull mxbai-embed-large
+
 
 NOTE: 
 >> SUBJECT TO CHANGE!!
@@ -40,8 +41,14 @@ Install dependencies
 pip install langchain langchain-ollama langchain-chroma
 # if error/missing upgrade your pip >> python -m pip install --upgrade pip
 
+
 Step 5:
 pip install pandas
+
+Step 6: TO DO THE TEST RUN
+# Keep the ollama running
+do the step 3, or keep it activate.
+then do >> python main.py
 
 
 GIT COMMANDS:
@@ -51,3 +58,4 @@ git add "file.file" or git commit -A
 git commit -m "message or let ai type for you :>"
 git push -u origin main or request a push
 git pull --no-rebase origin main --allow-unrelated-histories
+
