@@ -42,3 +42,12 @@ pip install langchain langchain-ollama langchain-chroma
 
 Step 5:
 pip install pandas
+
+
+GIT COMMANDS:
+
+git status
+git add "file.file" or git commit -A 
+git commit -m "message or let ai type for you :>"
+git push -u origin main or request a push
+git pull --no-rebase origin main --allow-unrelated-histories
