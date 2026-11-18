@@ -1,2 +1,43 @@
 # THE-AI
 IGNORE desktop.ini, I changed my folder icon lol.
+
+
+THE SET UP
+   >> THESE ARE SUBJECT TO CHANGE
+
+Step 1: download ollama
+
+Step 2: download ollama / library 
+https://ollama.com/library
+Library: llama3.2 > a small 1B and 3B model
+
+Step 3: Open Terminal >> ollama pull llama3.2
+
+Step 4: For the RAG >> ollama pull mxbai-embed-large
+
+
+requirements: (requirements.txt)
+langchain
+langchain-ollama
+langchain-chroma
+
+PYTHON:
+Step 1: Install PYTHON 3.12 >
+Open Terminal
+
+Create Virtual Environment (VE)
+Step 2: Go to the folder >> python -m venv venv
+
+Activate the VE
+Step 3: ./venv/Scripts/activate
+# if not enter , then redo Step 3. >> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+# To deactivate
+>> deactivate
+Step 4:
+Install dependencies
+pip install langchain langchain-ollama langchain-chroma
+# if error/missing upgrade your pip >> python -m pip install --upgrade pip
+
+Step 5: TO DO THE TEST RUN
+do the step 3, or keep it activate.
+then do >> python main.py
