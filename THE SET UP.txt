@@ -27,7 +27,8 @@ Step 2: Go to the folder >> python -m venv venv
 Activate the VE
 Step 3: ./venv/Scripts/activate
 # if not enter , then redo Step 3. >> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
-
+# To deactivate
+>> deactivate
 Step 4:
 Install dependencies
 pip install langchain langchain-ollama langchain-chroma
