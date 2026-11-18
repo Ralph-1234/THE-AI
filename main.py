@@ -7,7 +7,6 @@ model = OllamaLLM(model="llama3.2")
 template = """
 You are an expert in answering questions about Agriculture.
 
-Here are some relevant reviews: {reviews}
 
 Here is the question to answer: {question}
 """
