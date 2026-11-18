@@ -11,11 +11,16 @@ Step 3: Open Terminal >> ollama pull llama3.2
 
 Step 4: For the RAG >> ollama pull mxbai-embed-large
 
+NOTE: 
+>> SUBJECT TO CHANGE!!
+llama3.2 can be OPTIONAL for our LOCAL LLM.
+>> searching other resources
 
 requirements: (requirements.txt)
 langchain
 langchain-ollama
 langchain-chroma
+pandas
 
 PYTHON:
 Step 1: Install PYTHON 3.12 >
@@ -29,10 +34,11 @@ Step 3: ./venv/Scripts/activate
 # if not enter , then redo Step 3. >> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 # To deactivate
 >> deactivate
+
 Step 4:
 Install dependencies
 pip install langchain langchain-ollama langchain-chroma
 # if error/missing upgrade your pip >> python -m pip install --upgrade pip
 
 Step 5:
-pip install -r .\requirements.txt
+pip install pandas

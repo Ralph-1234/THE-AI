@@ -1,6 +1,7 @@
 from langchain_ollama.llms import OllamaLLM
 from langchain_core.prompts import ChatPromptTemplate
-# Ollama should be running
+from theRag import retriever # Import the retriever from theRag.py
+# Ollama should be running, OPTIONAL
 
 model = OllamaLLM(model="llama3.2")
 
@@ -15,6 +16,16 @@ Here is the question to answer: {question}
 prompt = ChatPromptTemplate.from_template(template)
 chain = prompt | model # chain to combine together for our Local LLM.
 
+while True:
+    question = input("Ask your question about Agriculture (or type 'exit' to quit/exit): ")
+    print("\n\n")
+    if question.lower() == "exit":
+        break
+
 # TEST RUN
-result = chain.invoke({"reviews": [], "question": "What are the best practices for sustainable agriculture?"})
-print(result)
+    reviews = retriever.invoke(question) # retrieve the relevant documents from the ChromaDB using the retriever
+    result = chain.invoke({"reviews": reviews, "question": question}) # pass in the retrieved documents and the question to the chain to generate the answer
+    print(result)
+
+
+ 
