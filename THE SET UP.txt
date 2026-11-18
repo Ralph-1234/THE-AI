@@ -1,4 +1,4 @@
-THE SET UP (CREATE A FOLDER)
+THE SET UP
    >> THESE ARE SUBJECT TO CHANGE
 
 Step 1: download ollama
@@ -35,4 +35,4 @@ pip install langchain langchain-ollama langchain-chroma
 # if error/missing upgrade your pip >> python -m pip install --upgrade pip
 
 Step 5:
-pip install -r .\requirements.txt
+
