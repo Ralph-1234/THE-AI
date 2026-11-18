@@ -1,7 +1,7 @@
 from langchain_ollama.llms import OllamaLLM
 from langchain_core.prompts import ChatPromptTemplate
 from theRag import retriever # Import the retriever from theRag.py
-# Ollama should be running, OPTIONAL
+# Ollama should be runningc
 
 model = OllamaLLM(model="llama3.2")
 
