@@ -34,5 +34,7 @@ Install dependencies
 pip install langchain langchain-ollama langchain-chroma
 # if error/missing upgrade your pip >> python -m pip install --upgrade pip
 
-Step 5:
+Step 5: TO DO THE TEST RUN
+do the step 3, or keep it activate.
+then do >> python main.py
 
