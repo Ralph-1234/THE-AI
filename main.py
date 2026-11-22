@@ -9,10 +9,10 @@ template = """
 You are an expert in answering questions about Agriculture.
 
 Here are some relevant reviews: {reviews} 
-# reviews = are articles, papers, and other relevant information about Agriculture.
 
 Here is the question to answer: {question}
 """
+# reviews = are articles, papers, and other relevant information about Agriculture.
 prompt = ChatPromptTemplate.from_template(template)
 chain = prompt | model # chain to combine together for our Local LLM.
 
