@@ -44,7 +44,7 @@ while True:
         for chunk in chain.stream({"reviews": formatted_reviews, "question": question}):
             print(chunk, end="", flush=True)
         
-        # 5. Print unique sources used so you can verify the farming advice
+        # 5. Print unique sources used so you can verif
         sources = {doc.metadata.get("source", "Unknown") for doc in reviews}
         print(f"\n\nSources: {', '.join(sources)}")
         print("-" * 50 + "\n")
